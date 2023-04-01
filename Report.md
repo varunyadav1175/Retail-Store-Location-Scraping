@@ -1,4 +1,4 @@
-REPORT
+**REPORT**
 
 Approach:
 
@@ -15,7 +15,7 @@ Finally, the extracted data is written to a CSV file using the csv module. A CSV
 
 Challenges:
 
-My primary non technical challenge was to find a website that let's you scrape the data and also has all the required data. I tried on Apple, Domino's Pizza and Taco Bell before using Unicorn Stores. Apart from that Unicorn stores does not have Store timings but since all the stores have the same timings I manually wrote it in the csv using write.writerow function.
+My primary non technical challenge was to find a website that let's you scrape the data and also has all the required data. I tried on Apple, Domino's Pizza and Taco Bell before using Unicorn Stores. Apart from that Unicorn stores does not have Store timings but since all the stores have the same timings I manually wrote it in the csv using writer.writerow function.
 
 One of the main challenges faced while working with this code was to extract the required data from the JSON response. As the JSON response was a nested structure, it required careful understanding and analysis to extract the relevant data. However, this was overcome by using the built-in Python JSON module and accessing the required data using the appropriate keys.
 
