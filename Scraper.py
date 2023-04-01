@@ -32,13 +32,14 @@ with open('store_data.csv', mode='w', newline='') as file:
     # Create a writer object
     writer = csv.writer(file)
     # Write the header row
-    writer.writerow(['Store Name', 'Address', 'Pincode', 'Phone', 'Latitude', 'Longitude'])
+    writer.writerow(['Store Name', 'Address', 'Pincode','Timings', 'Phone', 'Latitude', 'Longitude'])
     # Write the data row by row
     for store in data:
          writer.writerow([
              store.get('store_name'),
              store.get('store_address'),
              store.get('pin_code'),
+             '10am-6pm IST',
              store.get('store_contacts',),
              store.get('latitude'),
              store.get('longitude')
